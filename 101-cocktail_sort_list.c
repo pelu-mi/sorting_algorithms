@@ -6,11 +6,12 @@
  */
 void cocktail_sort_list(listint_t **list)
 {
+	/* Template for solution */
 	int x;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 	x = (*list)->n;
 	if (x > 5)
-		print_list(list);
+		print_list(*list);
 }

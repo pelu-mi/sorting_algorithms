@@ -7,6 +7,7 @@
  */
 void shell_sort(int *array, size_t size)
 {
+	/* Template for Solution */
 	int x, y;
 
 	if (array == NULL || size < 2)
