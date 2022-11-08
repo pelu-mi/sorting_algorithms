@@ -9,7 +9,9 @@ void shell_sort(int *array, size_t size)
 {
 	int x, y;
 
-	if (array)
+	if (array == NULL || size < 2)
+		return;
+	else
 		x = array[0] + 1;
 	y = size - 1;
 	if (x + y > 5)
