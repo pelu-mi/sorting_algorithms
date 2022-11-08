@@ -25,14 +25,12 @@ void swap(int *a, int *b)
 void selection_sort(int *array, size_t size)
 {
 	size_t i = 0, j, min_id;
-	/*bool flag = true;*/
 
 	if (array == NULL || size < 2)
 		return;
 
 	for (i = 0; i < size; i++)
 	{
-		/*flag = false;*/
 		min_id = i;
 		for (j = i + 1; j < size; j++)
 		{
@@ -44,8 +42,7 @@ void selection_sort(int *array, size_t size)
 		if (min_id != i)
 		{
 			swap(&array[min_id], &array[i]);
-			/*flag = true;*/
+			print_array(array, size);
 		}
-		print_array(array, size);
 	}
 }
