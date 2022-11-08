@@ -7,5 +7,11 @@
  */
 void shell_sort(int *array, size_t size)
 {
-	return;
+	int x, y;
+
+	if (array)
+		x = array[0] + 1;
+	y = size - 1;
+	if (x + y > 5)
+		print_array(array, size);
 }
